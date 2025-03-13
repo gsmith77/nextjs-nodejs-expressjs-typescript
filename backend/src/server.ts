@@ -9,6 +9,11 @@ app.use(cors({
 
 const port = 3001;
 
+// What is left to do is to create the MySQL Database and the table for the users.
+// Create the table using a migration file in the backend/src/migrations folder.
+// research the best way to create migration and run/rollback migrations in a Node.js app
+// Then update the routes to interact with the MySQL DB
+
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello World!");
 });
